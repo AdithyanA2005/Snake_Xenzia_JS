@@ -2,7 +2,7 @@
 
 > ### What is this?
 >
-> ![Screenshot]()
+> ![Screenshot](https://github.com/AdithyanA2005/Snake_Xenzia_JS/blob/main/github/Screenshot.png)
 >
 > This is a snake game which is made using javascript css and html with python flask as a framework
 >
