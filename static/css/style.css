@@ -1,0 +1,59 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* GAME CSS */
+.game_body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	min-width: 100vw;
+	background: url("../img/bg.jfif");
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;	
+}
+
+#board {
+	display: grid;
+	width: 90vmin;
+	height: 90vmin;
+	background: linear-gradient(lightcyan, lightblue, skyblue);
+	border: solid 1.5px lightblue;
+	grid-template-rows: repeat(20, 1fr);
+	grid-template-columns: repeat(20, 1fr);
+}
+
+.snake_head {
+	background: linear-gradient(rgb(0, 187, 255), rgba(25, 23, 151, 0.616));
+	transform: scale(1.05);
+	border-radius: 35%;
+}
+
+.snake_body {
+	background: linear-gradient(rgb(0, 255, 251), rgba(47, 95, 255, 0.426));
+	border-radius: 40%;
+	border: .25vmin solid rgba(3, 126, 140, 0.426);
+}
+
+.snake_food {
+	background: linear-gradient(rgb(0, 255, 251), rgba(47, 95, 255, 0.426));
+	border: .25vmin solid rgba(0, 102, 255, 0.398);
+	border-radius: 25%;
+}
+
+.score_container {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	top: 1vmin;
+	left: 2vmin;
+	width: 15vmin;
+	padding: 0.5vmin;
+	color: white;
+	background: rgb(8, 138, 189);
+	border: .35vmin solid white;
+	font-size: 2.5vmin;
+}
