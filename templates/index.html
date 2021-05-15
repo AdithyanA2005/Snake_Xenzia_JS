@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% if game %}
+    {% block js %}{{ url_for('static', filename='js/index.js') }}{% endblock js %}
+{% endif %}
+
+{% block body %}
+    {% if game %}
+        {% include 'game.html' %}
+    {% endif %}
+{% endblock body %}
